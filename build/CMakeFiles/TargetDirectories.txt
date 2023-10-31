@@ -1,0 +1,3 @@
+/home/alexandra/PAOO/build/CMakeFiles/carte.dir
+/home/alexandra/PAOO/build/CMakeFiles/edit_cache.dir
+/home/alexandra/PAOO/build/CMakeFiles/rebuild_cache.dir
