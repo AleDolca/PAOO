@@ -1,6 +1,7 @@
 #include "library.hpp"
 #include <iostream>
 #include <cstring>
+using namespace std;
 
 class Carte {
     private:
@@ -59,10 +60,10 @@ class Carte {
 
         // Funcție pentru afișarea informațiilor cărții
         void afiseaza() const{
-            std::cout << "Titlu: " << titlu << std::endl;
-            std::cout << "Autor: " << autor << std::endl;
-            std::cout << "An publicare: " << an_publicare << std::endl;
-            std::cout << std::endl;
+            cout << "Titlu: " << titlu << endl;
+            cout << "Autor: " << autor << endl;
+            cout << "An publicare: " << an_publicare << endl;
+            cout << endl;
         }
 };
 
@@ -73,19 +74,18 @@ int main() {
     Carte carte2 = carte1; // Apelul copy constructorului
     Carte carte3("The Adventures of Pinocchio", "Carlo Collodi", 1881);
 
-    std::cout << "Afisare cărți existente:\n";
-    std::cout << std::endl;
+    cout << "Afisare cărți existente:\n";
+    cout << endl;
 
     carte1.afiseaza();
     carte2.afiseaza();
     carte3.afiseaza();
 
-    std::cout << "Assignment operator:\n";
-    std::cout << std::endl;
+    cout << "Assignment operator:\n";
+    cout << endl;
     carte2=carte3;
     carte2.afiseaza();
     
     return 0;
 }
-
 
