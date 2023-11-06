@@ -1,3 +1,6 @@
-/home/alexandra/PAOO/build/CMakeFiles/carte.dir
+/home/alexandra/PAOO/build/CMakeFiles/MyProject.dir
 /home/alexandra/PAOO/build/CMakeFiles/edit_cache.dir
 /home/alexandra/PAOO/build/CMakeFiles/rebuild_cache.dir
+/home/alexandra/PAOO/build/Carte/CMakeFiles/CarteLib.dir
+/home/alexandra/PAOO/build/Carte/CMakeFiles/edit_cache.dir
+/home/alexandra/PAOO/build/Carte/CMakeFiles/rebuild_cache.dir

@@ -63,42 +63,85 @@ CMAKE_BINARY_DIR = /home/alexandra/PAOO/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/carte.dir/all
+all: CMakeFiles/MyProject.dir/all
+all: Carte/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Carte/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/carte.dir/clean
+clean: CMakeFiles/MyProject.dir/clean
+clean: Carte/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/carte.dir
+# Directory level rules for directory Carte
+
+# Recursive "all" directory target.
+Carte/all: Carte/CMakeFiles/CarteLib.dir/all
+.PHONY : Carte/all
+
+# Recursive "preinstall" directory target.
+Carte/preinstall:
+.PHONY : Carte/preinstall
+
+# Recursive "clean" directory target.
+Carte/clean: Carte/CMakeFiles/CarteLib.dir/clean
+.PHONY : Carte/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MyProject.dir
 
 # All Build rule for target.
-CMakeFiles/carte.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/carte.dir/build.make CMakeFiles/carte.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/carte.dir/build.make CMakeFiles/carte.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=1,2 "Built target carte"
-.PHONY : CMakeFiles/carte.dir/all
+CMakeFiles/MyProject.dir/all: Carte/CMakeFiles/CarteLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=3,4 "Built target MyProject"
+.PHONY : CMakeFiles/MyProject.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/carte.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/carte.dir/all
+CMakeFiles/MyProject.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
-.PHONY : CMakeFiles/carte.dir/rule
+.PHONY : CMakeFiles/MyProject.dir/rule
 
 # Convenience name for target.
-carte: CMakeFiles/carte.dir/rule
-.PHONY : carte
+MyProject: CMakeFiles/MyProject.dir/rule
+.PHONY : MyProject
 
 # clean rule for target.
-CMakeFiles/carte.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/carte.dir/build.make CMakeFiles/carte.dir/clean
-.PHONY : CMakeFiles/carte.dir/clean
+CMakeFiles/MyProject.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/clean
+.PHONY : CMakeFiles/MyProject.dir/clean
+
+#=============================================================================
+# Target rules for target Carte/CMakeFiles/CarteLib.dir
+
+# All Build rule for target.
+Carte/CMakeFiles/CarteLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=1,2 "Built target CarteLib"
+.PHONY : Carte/CMakeFiles/CarteLib.dir/all
+
+# Build rule for subdir invocation for target.
+Carte/CMakeFiles/CarteLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Carte/CMakeFiles/CarteLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
+.PHONY : Carte/CMakeFiles/CarteLib.dir/rule
+
+# Convenience name for target.
+CarteLib: Carte/CMakeFiles/CarteLib.dir/rule
+.PHONY : CarteLib
+
+# clean rule for target.
+Carte/CMakeFiles/CarteLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/clean
+.PHONY : Carte/CMakeFiles/CarteLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

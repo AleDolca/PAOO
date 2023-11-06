@@ -1,2 +1,2 @@
-# Empty dependencies file for carte.
+# Empty dependencies file for CarteLib.
 # This may be replaced when dependencies are built.
