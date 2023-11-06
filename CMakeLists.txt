@@ -2,18 +2,17 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Project name
-project(carte)
+project(MyProject)
 
-# Specify the required C++ standard
-if(CMAKE_VERSION GREATER "3.1.2") 
-    set(CMAKE_CXX_STANDARD 14)
-    set(CMAKE_CXX_STANDARD_REQUIRED ON)
-    set(CMAKE_CXX_EXTENSIONS OFF)
-else()
-    if(CMAKE_COMPILER_IS_GNUCXX)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
-    endif()    
-endif()    
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+add_subdirectory(Carte)
 
 # Define the executable
-add_executable(${PROJECT_NAME} src/main.cpp)    
+add_executable(MyProject main.cpp)   
+
+target_link_libraries(MyProject PRIVATE CarteLib)
+
+target_include_directories(MyProject PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/Carte")

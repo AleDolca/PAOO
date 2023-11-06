@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/alexandra/PAOO/src/main.cpp" "CMakeFiles/carte.dir/src/main.cpp.o" "gcc" "CMakeFiles/carte.dir/src/main.cpp.o.d"
+  "/home/alexandra/PAOO/Carte/Carte.cpp" "Carte/CMakeFiles/CarteLib.dir/Carte.cpp.o" "gcc" "Carte/CMakeFiles/CarteLib.dir/Carte.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
