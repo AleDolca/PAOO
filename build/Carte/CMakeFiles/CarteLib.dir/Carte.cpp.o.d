@@ -1,6 +1,8 @@
 Carte/CMakeFiles/CarteLib.dir/Carte.cpp.o: \
  /home/alexandra/PAOO/Carte/Carte.cpp /usr/include/stdc-predef.h \
- /home/alexandra/PAOO/Carte/Carte.hpp /usr/include/c++/11/iostream \
+ /home/alexandra/PAOO/Carte/Carte.hpp \
+ /home/alexandra/PAOO/Carte/../Detalii/Detalii.hpp \
+ /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles /home/alexandra/PAOO/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/alexandra/PAOO/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles /home/alexandra/PAOO/build/Detalii//CMakeFiles/progress.marks
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Detalii/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Detalii/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Detalii/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Detalii/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/alexandra/PAOO/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyProject
+# Convenience name for target.
+Detalii/CMakeFiles/DetaliiLib.dir/rule:
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Detalii/CMakeFiles/DetaliiLib.dir/rule
+.PHONY : Detalii/CMakeFiles/DetaliiLib.dir/rule
 
-# Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
-
-# fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
-
-#=============================================================================
-# Target rules for targets named CarteLib
-
-# Build rule for target.
-CarteLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CarteLib
-.PHONY : CarteLib
-
-# fast build rule for target.
-CarteLib/fast:
-	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/build
-.PHONY : CarteLib/fast
-
-#=============================================================================
-# Target rules for targets named DetaliiLib
-
-# Build rule for target.
-DetaliiLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DetaliiLib
+# Convenience name for target.
+DetaliiLib: Detalii/CMakeFiles/DetaliiLib.dir/rule
 .PHONY : DetaliiLib
 
 # fast build rule for target.
 DetaliiLib/fast:
-	$(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/build
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/build
 .PHONY : DetaliiLib/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+Detalii.o: Detalii.cpp.o
+.PHONY : Detalii.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.o
-.PHONY : main.cpp.o
+Detalii.cpp.o:
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/Detalii.cpp.o
+.PHONY : Detalii.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+Detalii.i: Detalii.cpp.i
+.PHONY : Detalii.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.i
-.PHONY : main.cpp.i
+Detalii.cpp.i:
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/Detalii.cpp.i
+.PHONY : Detalii.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Detalii.s: Detalii.cpp.s
+.PHONY : Detalii.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.s
-.PHONY : main.cpp.s
+Detalii.cpp.s:
+	cd /home/alexandra/PAOO/build && $(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/Detalii.cpp.s
+.PHONY : Detalii.cpp.s
 
 # Help Target
 help:
@@ -187,12 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CarteLib"
 	@echo "... DetaliiLib"
-	@echo "... MyProject"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Detalii.o"
+	@echo "... Detalii.i"
+	@echo "... Detalii.s"
 .PHONY : help
 
 
@@ -204,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/alexandra/PAOO/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

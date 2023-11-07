@@ -9,10 +9,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(Carte)
+add_subdirectory(Detalii)
 
 # Define the executable
 add_executable(MyProject main.cpp)   
 
-target_link_libraries(MyProject PRIVATE CarteLib)
+target_link_libraries(MyProject PRIVATE DetaliiLib CarteLib)
 
+target_include_directories(MyProject PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/Detalii")
 target_include_directories(MyProject PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/Carte")
