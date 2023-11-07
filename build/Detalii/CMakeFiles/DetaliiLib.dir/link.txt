@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDetaliiLib.a CMakeFiles/DetaliiLib.dir/Detalii.cpp.o
+/usr/bin/ranlib libDetaliiLib.a

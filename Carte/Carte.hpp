@@ -1,13 +1,11 @@
 #ifndef CARTE_HPP
 #define CARTE_HPP
-#include <iostream>
-#include <cstring>
 
-using namespace std;
+#include "Detalii.hpp"
 
-namespace CarteNamespace
+namespace Biblioteca
 {
-    class Carte {
+    class Carte : public Detalii{
         private:
             char* titlu;
             char* autor;
@@ -15,11 +13,34 @@ namespace CarteNamespace
 
             
         public:
+
+            // constructor
             Carte(const char* titlu, const char* autor, int an_publicare);
-            Carte(const Carte& other);
-            Carte& operator=(const Carte& other);
+
+            // destructor
             ~Carte();
-            void afiseaza() const;
+
+            // copy constructor
+            Carte(const Carte& other);
+
+            // assignment operator
+            Carte& operator=(const Carte& other);
+
+            // move constructor
+            Carte(Carte&& other);
+
+            // metoda pentru afișarea detaliilor unei cărți
+            void detaliiCarte() override;
+
+            // setters
+            void setTitlu(const char* newTitlu);
+            void setAutor(const char* newAutor);
+            void setAnPublicare(int newAnPublicare);
+
+            // getters
+            const char* getTitlu() const;
+            const char* getAutor() const;
+            int getAnPublicare() const;
     };
 }
 

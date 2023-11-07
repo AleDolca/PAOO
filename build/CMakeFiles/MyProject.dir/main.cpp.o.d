@@ -144,4 +144,6 @@ CMakeFiles/MyProject.dir/main.cpp.o: /home/alexandra/PAOO/main.cpp \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/alexandra/PAOO/Carte/Carte.hpp
+ /home/alexandra/PAOO/Carte/Carte.hpp \
+ /home/alexandra/PAOO/Detalii/Detalii.hpp \
+ /home/alexandra/PAOO/Detalii/Detalii.hpp
