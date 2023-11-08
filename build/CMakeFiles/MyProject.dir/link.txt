@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/MyProject.dir/main.cpp.o -o MyProject  Detalii/libDetaliiLib.a Carte/libCarteLib.a Detalii/libDetaliiLib.a 

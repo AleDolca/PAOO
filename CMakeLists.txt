@@ -1,20 +1,12 @@
-# CMake version
-cmake_minimum_required(VERSION 3.0)
+#CMake version
+cmake_minimum_required(VERSION 3.1)
 
-# Project name
+#Project name
 project(MyProject)
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD 14)  # we request C++14
+set(CMAKE_CXX_STANDARD_REQUIRED ON) # we request that CMake verifies the compiler
+set(CMAKE_CXX_EXTENSIONS OFF)  #we request -std=c++14 in the compiler  flags instead of –std=gnu++14
 
-add_subdirectory(Carte)
-add_subdirectory(Detalii)
+add_subdirectory(src)
 
-# Define the executable
-add_executable(MyProject main.cpp)   
-
-target_link_libraries(MyProject PRIVATE DetaliiLib CarteLib)
-
-target_include_directories(MyProject PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/Detalii")
-target_include_directories(MyProject PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/Carte")

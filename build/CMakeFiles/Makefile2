@@ -63,130 +63,145 @@ CMAKE_BINARY_DIR = /home/alexandra/PAOO/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyProject.dir/all
-all: Carte/all
-all: Detalii/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: Carte/preinstall
-preinstall: Detalii/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyProject.dir/clean
-clean: Carte/clean
-clean: Detalii/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory Carte
+# Directory level rules for directory src
 
 # Recursive "all" directory target.
-Carte/all: Carte/CMakeFiles/CarteLib.dir/all
-.PHONY : Carte/all
+src/all: src/CMakeFiles/MyProject.dir/all
+src/all: src/Carte/all
+src/all: src/Detalii/all
+.PHONY : src/all
 
 # Recursive "preinstall" directory target.
-Carte/preinstall:
-.PHONY : Carte/preinstall
+src/preinstall: src/Carte/preinstall
+src/preinstall: src/Detalii/preinstall
+.PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-Carte/clean: Carte/CMakeFiles/CarteLib.dir/clean
-.PHONY : Carte/clean
+src/clean: src/CMakeFiles/MyProject.dir/clean
+src/clean: src/Carte/clean
+src/clean: src/Detalii/clean
+.PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory Detalii
+# Directory level rules for directory src/Carte
 
 # Recursive "all" directory target.
-Detalii/all: Detalii/CMakeFiles/DetaliiLib.dir/all
-.PHONY : Detalii/all
+src/Carte/all: src/Carte/CMakeFiles/CarteLib.dir/all
+.PHONY : src/Carte/all
 
 # Recursive "preinstall" directory target.
-Detalii/preinstall:
-.PHONY : Detalii/preinstall
+src/Carte/preinstall:
+.PHONY : src/Carte/preinstall
 
 # Recursive "clean" directory target.
-Detalii/clean: Detalii/CMakeFiles/DetaliiLib.dir/clean
-.PHONY : Detalii/clean
+src/Carte/clean: src/Carte/CMakeFiles/CarteLib.dir/clean
+.PHONY : src/Carte/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyProject.dir
+# Directory level rules for directory src/Detalii
+
+# Recursive "all" directory target.
+src/Detalii/all: src/Detalii/CMakeFiles/DetaliiLib.dir/all
+.PHONY : src/Detalii/all
+
+# Recursive "preinstall" directory target.
+src/Detalii/preinstall:
+.PHONY : src/Detalii/preinstall
+
+# Recursive "clean" directory target.
+src/Detalii/clean: src/Detalii/CMakeFiles/DetaliiLib.dir/clean
+.PHONY : src/Detalii/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/MyProject.dir
 
 # All Build rule for target.
-CMakeFiles/MyProject.dir/all: Carte/CMakeFiles/CarteLib.dir/all
-CMakeFiles/MyProject.dir/all: Detalii/CMakeFiles/DetaliiLib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
+src/CMakeFiles/MyProject.dir/all: src/Carte/CMakeFiles/CarteLib.dir/all
+src/CMakeFiles/MyProject.dir/all: src/Detalii/CMakeFiles/DetaliiLib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyProject.dir/build.make src/CMakeFiles/MyProject.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyProject.dir/build.make src/CMakeFiles/MyProject.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=5,6 "Built target MyProject"
-.PHONY : CMakeFiles/MyProject.dir/all
+.PHONY : src/CMakeFiles/MyProject.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyProject.dir/rule: cmake_check_build_system
+src/CMakeFiles/MyProject.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyProject.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyProject.dir/rule
+.PHONY : src/CMakeFiles/MyProject.dir/rule
 
 # Convenience name for target.
-MyProject: CMakeFiles/MyProject.dir/rule
+MyProject: src/CMakeFiles/MyProject.dir/rule
 .PHONY : MyProject
 
 # clean rule for target.
-CMakeFiles/MyProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/clean
-.PHONY : CMakeFiles/MyProject.dir/clean
+src/CMakeFiles/MyProject.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyProject.dir/build.make src/CMakeFiles/MyProject.dir/clean
+.PHONY : src/CMakeFiles/MyProject.dir/clean
 
 #=============================================================================
-# Target rules for target Carte/CMakeFiles/CarteLib.dir
+# Target rules for target src/Carte/CMakeFiles/CarteLib.dir
 
 # All Build rule for target.
-Carte/CMakeFiles/CarteLib.dir/all: Detalii/CMakeFiles/DetaliiLib.dir/all
-	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/build
+src/Carte/CMakeFiles/CarteLib.dir/all: src/Detalii/CMakeFiles/DetaliiLib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/Carte/CMakeFiles/CarteLib.dir/build.make src/Carte/CMakeFiles/CarteLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Carte/CMakeFiles/CarteLib.dir/build.make src/Carte/CMakeFiles/CarteLib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=1,2 "Built target CarteLib"
-.PHONY : Carte/CMakeFiles/CarteLib.dir/all
+.PHONY : src/Carte/CMakeFiles/CarteLib.dir/all
 
 # Build rule for subdir invocation for target.
-Carte/CMakeFiles/CarteLib.dir/rule: cmake_check_build_system
+src/Carte/CMakeFiles/CarteLib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Carte/CMakeFiles/CarteLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Carte/CMakeFiles/CarteLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
-.PHONY : Carte/CMakeFiles/CarteLib.dir/rule
+.PHONY : src/Carte/CMakeFiles/CarteLib.dir/rule
 
 # Convenience name for target.
-CarteLib: Carte/CMakeFiles/CarteLib.dir/rule
+CarteLib: src/Carte/CMakeFiles/CarteLib.dir/rule
 .PHONY : CarteLib
 
 # clean rule for target.
-Carte/CMakeFiles/CarteLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Carte/CMakeFiles/CarteLib.dir/build.make Carte/CMakeFiles/CarteLib.dir/clean
-.PHONY : Carte/CMakeFiles/CarteLib.dir/clean
+src/Carte/CMakeFiles/CarteLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Carte/CMakeFiles/CarteLib.dir/build.make src/Carte/CMakeFiles/CarteLib.dir/clean
+.PHONY : src/Carte/CMakeFiles/CarteLib.dir/clean
 
 #=============================================================================
-# Target rules for target Detalii/CMakeFiles/DetaliiLib.dir
+# Target rules for target src/Detalii/CMakeFiles/DetaliiLib.dir
 
 # All Build rule for target.
-Detalii/CMakeFiles/DetaliiLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/build
+src/Detalii/CMakeFiles/DetaliiLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=3,4 "Built target DetaliiLib"
-.PHONY : Detalii/CMakeFiles/DetaliiLib.dir/all
+.PHONY : src/Detalii/CMakeFiles/DetaliiLib.dir/all
 
 # Build rule for subdir invocation for target.
-Detalii/CMakeFiles/DetaliiLib.dir/rule: cmake_check_build_system
+src/Detalii/CMakeFiles/DetaliiLib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Detalii/CMakeFiles/DetaliiLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Detalii/CMakeFiles/DetaliiLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
-.PHONY : Detalii/CMakeFiles/DetaliiLib.dir/rule
+.PHONY : src/Detalii/CMakeFiles/DetaliiLib.dir/rule
 
 # Convenience name for target.
-DetaliiLib: Detalii/CMakeFiles/DetaliiLib.dir/rule
+DetaliiLib: src/Detalii/CMakeFiles/DetaliiLib.dir/rule
 .PHONY : DetaliiLib
 
 # clean rule for target.
-Detalii/CMakeFiles/DetaliiLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Detalii/CMakeFiles/DetaliiLib.dir/build.make Detalii/CMakeFiles/DetaliiLib.dir/clean
-.PHONY : Detalii/CMakeFiles/DetaliiLib.dir/clean
+src/Detalii/CMakeFiles/DetaliiLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/clean
+.PHONY : src/Detalii/CMakeFiles/DetaliiLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
