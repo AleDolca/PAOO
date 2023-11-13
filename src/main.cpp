@@ -35,6 +35,7 @@ int main() {
     cout << "Exemplificare move constructor:\n";
     Carte temp("Robinson Crusoe", "Daniel Defoe", 1719);
     Carte carte4(move(temp));
+    temp.detaliiCarte();
     carte4.detaliiCarte();
     return 0;
 }

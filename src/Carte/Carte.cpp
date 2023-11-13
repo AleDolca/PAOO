@@ -42,7 +42,6 @@ namespace Biblioteca{
 
         other.titlu = nullptr;
         other.autor = nullptr;
-        other.an_publicare = 0;
     }
 
     // Assignment operator: copiaza datele unui obiect existent intr-un alt obiect existent 
