@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alexandra/PAOO/src/Detalii -I/home/alexandra/PAOO/src/Carte -I/home/alexandra/PAOO/src/Carte/../Detalii
+CXX_INCLUDES = -I/home/alexandra/PAOO/src/Detalii -I/home/alexandra/PAOO/src/Carte -I/home/alexandra/PAOO/src/EBook -I/home/alexandra/PAOO/src/Colectie -I/home/alexandra/PAOO/src/Carte/../Detalii -I/home/alexandra/PAOO/src/EBook/../Carte -I/home/alexandra/PAOO/src/EBook/../Detalii
 
 CXX_FLAGS = -std=c++14
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libColectieLib.a CMakeFiles/ColectieLib.dir/Colectie.cpp.o
+/usr/bin/ranlib libColectieLib.a

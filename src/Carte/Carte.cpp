@@ -5,6 +5,11 @@ using namespace std;
 
 namespace Biblioteca{
 
+    Carte::Carte(){
+        this->titlu = nullptr;
+        this->autor = nullptr;
+        this->an_publicare = 0;
+    }
     // Constructor care inițializează membrii
     Carte::Carte(const char* titlu, const char* autor, int an_publicare) {
         this->titlu = new char[strlen(titlu) + 1];

@@ -81,17 +81,23 @@ clean: src/clean
 src/all: src/CMakeFiles/MyProject.dir/all
 src/all: src/Carte/all
 src/all: src/Detalii/all
+src/all: src/EBook/all
+src/all: src/Colectie/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/Carte/preinstall
 src/preinstall: src/Detalii/preinstall
+src/preinstall: src/EBook/preinstall
+src/preinstall: src/Colectie/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/MyProject.dir/clean
 src/clean: src/Carte/clean
 src/clean: src/Detalii/clean
+src/clean: src/EBook/clean
+src/clean: src/Colectie/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -110,6 +116,21 @@ src/Carte/clean: src/Carte/CMakeFiles/CarteLib.dir/clean
 .PHONY : src/Carte/clean
 
 #=============================================================================
+# Directory level rules for directory src/Colectie
+
+# Recursive "all" directory target.
+src/Colectie/all: src/Colectie/CMakeFiles/ColectieLib.dir/all
+.PHONY : src/Colectie/all
+
+# Recursive "preinstall" directory target.
+src/Colectie/preinstall:
+.PHONY : src/Colectie/preinstall
+
+# Recursive "clean" directory target.
+src/Colectie/clean: src/Colectie/CMakeFiles/ColectieLib.dir/clean
+.PHONY : src/Colectie/clean
+
+#=============================================================================
 # Directory level rules for directory src/Detalii
 
 # Recursive "all" directory target.
@@ -125,19 +146,36 @@ src/Detalii/clean: src/Detalii/CMakeFiles/DetaliiLib.dir/clean
 .PHONY : src/Detalii/clean
 
 #=============================================================================
+# Directory level rules for directory src/EBook
+
+# Recursive "all" directory target.
+src/EBook/all: src/EBook/CMakeFiles/EBookLib.dir/all
+.PHONY : src/EBook/all
+
+# Recursive "preinstall" directory target.
+src/EBook/preinstall:
+.PHONY : src/EBook/preinstall
+
+# Recursive "clean" directory target.
+src/EBook/clean: src/EBook/CMakeFiles/EBookLib.dir/clean
+.PHONY : src/EBook/clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/MyProject.dir
 
 # All Build rule for target.
 src/CMakeFiles/MyProject.dir/all: src/Carte/CMakeFiles/CarteLib.dir/all
 src/CMakeFiles/MyProject.dir/all: src/Detalii/CMakeFiles/DetaliiLib.dir/all
+src/CMakeFiles/MyProject.dir/all: src/EBook/CMakeFiles/EBookLib.dir/all
+src/CMakeFiles/MyProject.dir/all: src/Colectie/CMakeFiles/ColectieLib.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyProject.dir/build.make src/CMakeFiles/MyProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyProject.dir/build.make src/CMakeFiles/MyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=5,6 "Built target MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=9,10 "Built target MyProject"
 .PHONY : src/CMakeFiles/MyProject.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/MyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/MyProject.dir/rule
@@ -184,7 +222,7 @@ src/Carte/CMakeFiles/CarteLib.dir/clean:
 src/Detalii/CMakeFiles/DetaliiLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=3,4 "Built target DetaliiLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=5,6 "Built target DetaliiLib"
 .PHONY : src/Detalii/CMakeFiles/DetaliiLib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -202,6 +240,59 @@ DetaliiLib: src/Detalii/CMakeFiles/DetaliiLib.dir/rule
 src/Detalii/CMakeFiles/DetaliiLib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/clean
 .PHONY : src/Detalii/CMakeFiles/DetaliiLib.dir/clean
+
+#=============================================================================
+# Target rules for target src/EBook/CMakeFiles/EBookLib.dir
+
+# All Build rule for target.
+src/EBook/CMakeFiles/EBookLib.dir/all: src/Carte/CMakeFiles/CarteLib.dir/all
+src/EBook/CMakeFiles/EBookLib.dir/all: src/Detalii/CMakeFiles/DetaliiLib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/EBook/CMakeFiles/EBookLib.dir/build.make src/EBook/CMakeFiles/EBookLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/EBook/CMakeFiles/EBookLib.dir/build.make src/EBook/CMakeFiles/EBookLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=7,8 "Built target EBookLib"
+.PHONY : src/EBook/CMakeFiles/EBookLib.dir/all
+
+# Build rule for subdir invocation for target.
+src/EBook/CMakeFiles/EBookLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/EBook/CMakeFiles/EBookLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
+.PHONY : src/EBook/CMakeFiles/EBookLib.dir/rule
+
+# Convenience name for target.
+EBookLib: src/EBook/CMakeFiles/EBookLib.dir/rule
+.PHONY : EBookLib
+
+# clean rule for target.
+src/EBook/CMakeFiles/EBookLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/EBook/CMakeFiles/EBookLib.dir/build.make src/EBook/CMakeFiles/EBookLib.dir/clean
+.PHONY : src/EBook/CMakeFiles/EBookLib.dir/clean
+
+#=============================================================================
+# Target rules for target src/Colectie/CMakeFiles/ColectieLib.dir
+
+# All Build rule for target.
+src/Colectie/CMakeFiles/ColectieLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Colectie/CMakeFiles/ColectieLib.dir/build.make src/Colectie/CMakeFiles/ColectieLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Colectie/CMakeFiles/ColectieLib.dir/build.make src/Colectie/CMakeFiles/ColectieLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/PAOO/build/CMakeFiles --progress-num=3,4 "Built target ColectieLib"
+.PHONY : src/Colectie/CMakeFiles/ColectieLib.dir/all
+
+# Build rule for subdir invocation for target.
+src/Colectie/CMakeFiles/ColectieLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Colectie/CMakeFiles/ColectieLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/PAOO/build/CMakeFiles 0
+.PHONY : src/Colectie/CMakeFiles/ColectieLib.dir/rule
+
+# Convenience name for target.
+ColectieLib: src/Colectie/CMakeFiles/ColectieLib.dir/rule
+.PHONY : ColectieLib
+
+# clean rule for target.
+src/Colectie/CMakeFiles/ColectieLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Colectie/CMakeFiles/ColectieLib.dir/build.make src/Colectie/CMakeFiles/ColectieLib.dir/clean
+.PHONY : src/Colectie/CMakeFiles/ColectieLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
