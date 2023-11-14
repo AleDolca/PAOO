@@ -1,0 +1,2 @@
+/usr/bin/ar qc libEBookLib.a CMakeFiles/EBookLib.dir/EBook.cpp.o
+/usr/bin/ranlib libEBookLib.a

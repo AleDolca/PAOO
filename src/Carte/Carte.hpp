@@ -1,3 +1,4 @@
+#pragma once
 #ifndef CARTE_HPP
 #define CARTE_HPP
 
@@ -6,13 +7,15 @@
 namespace Biblioteca
 {
     class Carte : public Detalii{
-        private:
+        protected:
             char* titlu;
             char* autor;
             int an_publicare;
 
             
         public:
+            // no-args constructor
+            Carte();
 
             // constructor
             Carte(const char* titlu, const char* autor, int an_publicare);

@@ -9,3 +9,9 @@
 /home/alexandra/PAOO/build/src/Detalii/CMakeFiles/DetaliiLib.dir
 /home/alexandra/PAOO/build/src/Detalii/CMakeFiles/edit_cache.dir
 /home/alexandra/PAOO/build/src/Detalii/CMakeFiles/rebuild_cache.dir
+/home/alexandra/PAOO/build/src/EBook/CMakeFiles/EBookLib.dir
+/home/alexandra/PAOO/build/src/EBook/CMakeFiles/edit_cache.dir
+/home/alexandra/PAOO/build/src/EBook/CMakeFiles/rebuild_cache.dir
+/home/alexandra/PAOO/build/src/Colectie/CMakeFiles/ColectieLib.dir
+/home/alexandra/PAOO/build/src/Colectie/CMakeFiles/edit_cache.dir
+/home/alexandra/PAOO/build/src/Colectie/CMakeFiles/rebuild_cache.dir

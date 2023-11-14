@@ -46,6 +46,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/alexandra/PAOO/build/src/Carte/cmake_install.cmake")
   include("/home/alexandra/PAOO/build/src/Detalii/cmake_install.cmake")
+  include("/home/alexandra/PAOO/build/src/EBook/cmake_install.cmake")
+  include("/home/alexandra/PAOO/build/src/Colectie/cmake_install.cmake")
 
 endif()
 

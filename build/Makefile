@@ -155,6 +155,32 @@ DetaliiLib/fast:
 	$(MAKE) $(MAKESILENT) -f src/Detalii/CMakeFiles/DetaliiLib.dir/build.make src/Detalii/CMakeFiles/DetaliiLib.dir/build
 .PHONY : DetaliiLib/fast
 
+#=============================================================================
+# Target rules for targets named EBookLib
+
+# Build rule for target.
+EBookLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EBookLib
+.PHONY : EBookLib
+
+# fast build rule for target.
+EBookLib/fast:
+	$(MAKE) $(MAKESILENT) -f src/EBook/CMakeFiles/EBookLib.dir/build.make src/EBook/CMakeFiles/EBookLib.dir/build
+.PHONY : EBookLib/fast
+
+#=============================================================================
+# Target rules for targets named ColectieLib
+
+# Build rule for target.
+ColectieLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ColectieLib
+.PHONY : ColectieLib
+
+# fast build rule for target.
+ColectieLib/fast:
+	$(MAKE) $(MAKESILENT) -f src/Colectie/CMakeFiles/ColectieLib.dir/build.make src/Colectie/CMakeFiles/ColectieLib.dir/build
+.PHONY : ColectieLib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,7 +190,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CarteLib"
+	@echo "... ColectieLib"
 	@echo "... DetaliiLib"
+	@echo "... EBookLib"
 	@echo "... MyProject"
 .PHONY : help
 
